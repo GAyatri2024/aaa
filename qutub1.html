@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Taj Mahal Trip Registration</title>
+</head>
+<body bgcolor="#90EE90">
+    <h2 style="text-align: center">Qutub Minar Trip Registration</h2>
+    <div style="background-color: #fff; width: 300px; margin: 0 auto; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <form>
+            <label for="fullName" style="font-weight: bold;">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required style="width: calc(100% - 12px); padding: 6px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: Arial, sans-serif;"><br>
+            <label for="email" style="font-weight: bold;">Email:</label><br>
+            <input type="email" id="email" name="email" required style="width: calc(100% - 12px); padding: 6px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: Arial, sans-serif;"><br>
+            <label for="phone" style="font-weight: bold;">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required style="width: calc(100% - 12px); padding: 6px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: Arial, sans-serif;"><br>
+            <label for="days" style="font-weight: bold;">Number of Days for Trip:</label><br>
+            <input type="number" id="days" name="days" min="1" required style="width: calc(100% - 12px); padding: 6px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: Arial, sans-serif;"><br>
+            <label for="tourists" style="font-weight: bold;">Number of Tourists:</label><br>
+            <input type="number" id="tourists" name="tourists" min="1" required style="width: calc(100% - 12px); padding: 6px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: Arial, sans-serif;"><br>
+            <label for="tripType" style="font-weight: bold;">Trip Type:</label><br>
+            <input type="radio" id="solo" name="tripType" value="solo">
+            <label for="solo">Solo</label>
+            <input type="radio" id="group" name="tripType" value="group">
+            <label for="group">Group</label><br>
+            <label for="interests" style="font-weight: bold;">Interests:</label><br>
+            <input type="checkbox" id="history" name="interests" value="history">
+            <label for="history">History</label>
+            <input type="checkbox" id="architecture" name="interests" value="architecture">
+            <label for="architecture">Architecture</label><br>
+            <input type="checkbox" id="culture" name="interests" value="culture">
+            <label for="culture">Culture</label>
+            <input type="checkbox" id="photography" name="interests" value="photography">
+            <label for="photography">Photography</label><br>
+            <label for="comments" style="font-weight: bold;">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="30" style="width: calc(100% - 12px); padding: 6px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: Arial, sans-serif;"></textarea><br>
+            <input type="submit" value="Register" style="width: 100%; padding: 10px; border: none; border-radius: 4px; background-color: #4CAF50; color: white; cursor: pointer; font-size: 16px;">
+        </form>
+    </div>
+</body>
+</html>

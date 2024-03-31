@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainyEscapes Registration</title>
+</head>
+<body style="background-color: #7898a7; font-family: 'Comic Sans MS', cursive; text-align: center; color: #333;">
+    <div style="max-width: 400px; margin: 0 auto; padding: 20px; background-color: rgba(255, 255, 255, 0.8); border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h1 style="font-family: 'Courier New', monospace;">Register for RainyEscapes</h1>
+        <p>Embrace the Rain: Discover Adventure in Every Droplet!</p>
+        <form action="#" method="post">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required style="padding: 8px; width: 100%; margin-bottom: 10px;"><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required style="padding: 8px; width: 100%; margin-bottom: 10px;"><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required minlength="8" style="padding: 8px; width: 100%; margin-bottom: 10px;"><br>
+            
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required minlength="8" style="padding: 8px; width: 100%; margin-bottom: 10px;"><br>
+            
+            <label for="other">How did you hear about us?</label><br>
+            <select id="other" name="other" style="padding: 8px; width: 100%; margin-bottom: 10px;">
+                <option value="friend">From a friend</option>
+                <option value="social_media">Social Media</option>
+                <option value="website">Website</option>
+                <option value="other">Other</option>
+            </select><br>
+            
+            <label>Interests:</label><br>
+            <input type="checkbox" id="hiking" name="interests" value="hiking">
+            <label for="hiking">Hiking</label><br>
+            <input type="checkbox" id="camping" name="interests" value="camping">
+            <label for="camping">Camping</label><br>
+            <input type="checkbox" id="fishing" name="interests" value="fishing">
+            <label for="fishing">Fishing</label><br>
+            
+            <label for="newsletter">Subscribe to Newsletter:</label><br>
+            <input type="radio" id="yes" name="newsletter" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="newsletter" value="no">
+            <label for="no">No</label><br>
+            
+            <input type="submit" value="Register" onclick="alert('You have registered successfully for RainyEscapes!')" style="background-color: #ff6f61; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-family: 'Arial Black', sans-serif;">
+        </form>
+    </div>
+</body>
+</html>
